@@ -9,6 +9,7 @@
 --cornflower: #E7E9FC;
 --cloud: #F4F4FD;
 --dairy: #FCFCFC;
+--grey-bg: #2E2F42;
 }
 
 body {
@@ -249,6 +250,15 @@ width: calc((100% - 48px) / 3);
 .section-hero-bg {
   background-color: var(--navyblue);
   padding: 188px 0;
+  margin: 0 auto;
+
+  background-image: linear-gradient(rgba(46, 47, 66, 0.70),
+  rgba(46, 47, 66, 0.70)),
+  url(../images/hero/people-office-hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  max-width: 1440px;
+  height: 600px;
 }
 
 
@@ -299,6 +309,30 @@ background-color: var(--ocean);
   | Strategy section
   |============================
 */
+
+.strategy-iteams {
+  display: flex;
+  gap: 24px;
+  padding: 0;
+  margin: auto;
+}
+
+.strategy-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 24px 100px;
+}
+
+.str-icon-wrapper {
+  display: flex;
+  width: 264px;
+  height: 112px;
+  border-radius: 4px;
+  background: var(--cloud);
+  margin-bottom: 8px;
+}
+
 .style-section-p {
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -340,13 +374,6 @@ clip: rect(0 0 0 0);
 overflow: hidden;
 }
 
-.strategy-iteams {
-  display: flex;
-  gap: 24px;
-  padding: 0;
-  margin: auto;
-}
-
 .strategy-section {
   padding: 120px 0;
 }
@@ -385,6 +412,37 @@ padding-bottom: 120px;
 .section-team-style {
   background-color: var(--cloud);
   padding: 120px 0;
+  max-height: 780px;
+}
+
+.networks-icons{
+display: flex;
+align-items: center;
+justify-content: center;
+fill: var(--cloud);
+}
+
+.team-icons{
+  display: inline-flex;
+  gap: 24px;
+  align-items: center;
+  
+}
+
+.networks-wrapper{
+background-color: var(--iris);
+border-radius: 50%;
+width: 40px;
+height: 40px;
+
+display: inline-flex;
+justify-content: center;
+align-items: center;
+}
+
+.networks-wrapper:hover,
+.networks-wrapper:focus {
+background-color: var(--ocean);
 }
 
 .team-iteams {
@@ -398,6 +456,9 @@ padding-bottom: 120px;
   background-color: var(--white);
   width: calc((100% - 72px) / 4);
   border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 
+  0px 1px 1px 0px rgba(46, 47, 66, 0.16), 
+  0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
 
@@ -408,11 +469,42 @@ padding-bottom: 120px;
 
 .text {
 text-align: center;
+margin-bottom: 8px;
 }
 
 .title-team {
 padding: 32px 0;
+text-align: center;
 }
+
+/**
+  |============================
+  | Customers section
+  |============================
+*/
+
+.customers-icons{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  fill: var(--light-slate);
+}
+
+.customers-wrapper{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 4px;
+  border: 1px solid var(--light-slate)
+}
+
+.company-icon{
+  display: inline-flex;
+  gap: 24px;
+}
+
 
 /**
   |============================
