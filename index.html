@@ -68,7 +68,7 @@
           <h1 class="hero-h style-h-one">
             Effective Solutions for Your Business
           </h1>
-          <button type="button" class="btn style-button-hero">
+          <button class="btn style-button-hero" type="button" data-modal-open>
             Order Service
           </button>
         </div>
@@ -446,5 +446,18 @@
         </div>
       </div>
     </footer>
+
+    <!-- Modal window -->
+    <div class="backdrop" data-modal>
+      <div class="modal">
+        <button class="modal-btn" type="button" data-modal-close>
+          <svg class="modal-btn-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close-md"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
