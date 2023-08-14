@@ -302,10 +302,11 @@ justify-content: center;
 background: var(--iris);
 }
 
-.carts-set-iteam:hover .overlay,
-.carts-set-iteam:focus .overlay {
-  transform: translateY(0);
+.carts-set-iteam:hover .overlay {
+transform: translateY(0);
 }
+
+
 
 .carts-set {
 display: flex;
@@ -318,6 +319,11 @@ padding: 0;
 .prt-link {
   display: block;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.prt-link:hover p,
+.prt-link:focus p{
+  transform: translateY(0%);
 }
 
 .carts-set-iteam {
